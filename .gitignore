@@ -1,0 +1,38 @@
+# Python environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Raw and generated data
+data/raw/*
+data/interim/*
+data/processed/*
+data/final/*
+
+# Keep folder structure
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+!data/final/.gitkeep
+
+# Trained models
+models/*.h5
+models/*.keras
+models/*.pkl
+
+# Temporary files
+*.tmp
+*.log
