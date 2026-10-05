@@ -1,0 +1,4 @@
+dataset,standard_missing_values,missing_district_months,special_coverage_issue
+Dengue,0,0,None
+Weather,0,0,Partial boundary coverage
+Population,0,1200,Structural pre-2014 coverage gap

@@ -1,0 +1,4 @@
+dataset,rows,districts,months,first_month,last_month,standard_missing_values
+Dengue,4500,25,180,2010-01-01,2024-12-01,0
+Weather,4500,25,180,2010-01-01,2024-12-01,0
+Population,3300,25,132,2014-01-01,2024-12-01,0
