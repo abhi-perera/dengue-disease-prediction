@@ -1,0 +1,4 @@
+method,number_of_wins
+Seasonal,10
+Linear,7
+KNN,7

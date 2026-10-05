@@ -1,0 +1,5 @@
+variable,method,mean_MAE,mean_RMSE
+humidity_mean_percent,KNN,2.551229863761782,3.44694992807124
+rainfall_total_mm,KNN,55.13097864631058,79.19287459470972
+temperature_mean_c,Linear,0.4092196556700589,0.5352859182533237
+wind_speed_mean_kmh,Seasonal,1.490168802837361,2.000375081419293

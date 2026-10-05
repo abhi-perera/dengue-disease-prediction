@@ -1,0 +1,25 @@
+variable,missingness_type,mask_rate,gap_length,masked_observations,method,MAE,RMSE
+humidity_mean_percent,Random isolated,0.05,,206,Linear,2.387664321635434,3.2516349489941367
+humidity_mean_percent,Random isolated,0.1,,412,Linear,2.3575110608752885,3.1950239658462074
+humidity_mean_percent,Random isolated,0.2,,825,Linear,2.4242213233960457,3.243967505595788
+humidity_mean_percent,Temporal gap,,1.0,75,KNN,2.7214794215865323,3.465946108502031
+humidity_mean_percent,Temporal gap,,2.0,150,Seasonal,2.447482168773426,3.09797267371897
+humidity_mean_percent,Temporal gap,,3.0,225,Seasonal,2.672117610607715,3.611751137216732
+rainfall_total_mm,Random isolated,0.05,,206,KNN,57.50415202606415,81.04688838592122
+rainfall_total_mm,Random isolated,0.1,,412,KNN,60.90722026996315,88.9826856133225
+rainfall_total_mm,Random isolated,0.2,,825,KNN,58.02729057052667,83.829280207856
+rainfall_total_mm,Temporal gap,,1.0,75,KNN,47.29671879147339,68.33181707971357
+rainfall_total_mm,Temporal gap,,2.0,150,KNN,55.8446888402096,80.57046296164916
+rainfall_total_mm,Temporal gap,,3.0,225,KNN,51.20580137962652,72.3961133197959
+temperature_mean_c,Random isolated,0.05,,206,Linear,0.3304135774994254,0.43790810237462663
+temperature_mean_c,Random isolated,0.1,,412,Linear,0.35150164605379075,0.46556574567736175
+temperature_mean_c,Random isolated,0.2,,825,Linear,0.35088169240474004,0.4630052503365069
+temperature_mean_c,Temporal gap,,1.0,75,Linear,0.36695822977911957,0.45911574222385027
+temperature_mean_c,Temporal gap,,2.0,150,Seasonal,0.47185240267868733,0.5798589768971348
+temperature_mean_c,Temporal gap,,3.0,225,Seasonal,0.5059948071621041,0.6664753058227838
+wind_speed_mean_kmh,Random isolated,0.05,,206,Seasonal,1.4364082493592385,1.9399914085548353
+wind_speed_mean_kmh,Random isolated,0.1,,412,Seasonal,1.4208927353102647,1.9213595439893298
+wind_speed_mean_kmh,Random isolated,0.2,,825,Seasonal,1.4883132648768784,1.9936247635787774
+wind_speed_mean_kmh,Temporal gap,,1.0,75,Seasonal,1.4024183330820703,1.9025160847819242
+wind_speed_mean_kmh,Temporal gap,,2.0,150,Seasonal,1.6884293490257116,2.237538398352456
+wind_speed_mean_kmh,Temporal gap,,3.0,225,Seasonal,1.504550885370003,2.0072202892584343
