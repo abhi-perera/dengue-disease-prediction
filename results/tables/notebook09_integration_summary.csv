@@ -1,0 +1,4 @@
+dataset,rows,districts,first_month,last_month,population_required,complete_weather_required
+dengue_weather_full,4500,25,2010-01-01,2024-12-01,False,False
+population_inclusive,3300,25,2014-01-01,2024-12-01,True,False
+population_strict,3275,25,2014-01-01,2024-11-01,True,True
