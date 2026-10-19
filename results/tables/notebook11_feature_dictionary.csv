@@ -1,0 +1,35 @@
+feature,category,availability,description
+dengue_cases,dengue,end_of_feature_month_t,Historical or current-month predictor; no future observations
+dengue_cases_lag1,dengue,end_of_feature_month_t,Historical or current-month predictor; no future observations
+dengue_cases_lag2,dengue,end_of_feature_month_t,Historical or current-month predictor; no future observations
+dengue_cases_lag3,dengue,end_of_feature_month_t,Historical or current-month predictor; no future observations
+dengue_cases_lag6,dengue,end_of_feature_month_t,Historical or current-month predictor; no future observations
+dengue_cases_roll3_mean,dengue,end_of_feature_month_t,Historical or current-month predictor; no future observations
+dengue_cases_roll6_mean,dengue,end_of_feature_month_t,Historical or current-month predictor; no future observations
+temperature_mean_c,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+humidity_mean_percent,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+rainfall_total_mm,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+wind_speed_mean_kmh,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+temperature_mean_c_lag1,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+temperature_mean_c_lag2,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+temperature_mean_c_lag3,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+humidity_mean_percent_lag1,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+humidity_mean_percent_lag2,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+humidity_mean_percent_lag3,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+rainfall_total_mm_lag1,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+rainfall_total_mm_lag2,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+rainfall_total_mm_lag3,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+wind_speed_mean_kmh_lag1,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+wind_speed_mean_kmh_lag2,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+wind_speed_mean_kmh_lag3,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+temperature_mean_c_roll3_mean,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+humidity_mean_percent_roll3_mean,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+rainfall_total_mm_roll3_sum,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+wind_speed_mean_kmh_roll3_mean,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+temperature_mean_c_roll6_mean,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+humidity_mean_percent_roll6_mean,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+rainfall_total_mm_roll6_sum,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+wind_speed_mean_kmh_roll6_mean,weather,end_of_feature_month_t,Historical or current-month predictor; no future observations
+target_month_sin,seasonality,end_of_feature_month_t,Known calendar position of target month t+1
+target_month_cos,seasonality,end_of_feature_month_t,Known calendar position of target month t+1
+population,population,end_of_feature_month_t,Population for feature month t; 2014 onward only
