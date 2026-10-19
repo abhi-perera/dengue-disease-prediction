@@ -1,0 +1,17 @@
+weather_variable,lag_months,paired_observations,spearman_correlation
+temperature_mean_c,0,4175,-0.19238692877583188
+temperature_mean_c,1,4150,-0.20525013309012133
+temperature_mean_c,2,4125,-0.177286836534875
+temperature_mean_c,3,4100,-0.12426633145925281
+humidity_mean_percent,0,4175,0.2754979087150351
+humidity_mean_percent,1,4150,0.3486921741545227
+humidity_mean_percent,2,4125,0.3573800046075457
+humidity_mean_percent,3,4100,0.2742563818451203
+rainfall_total_mm,0,4175,0.21347661709318497
+rainfall_total_mm,1,4150,0.3029270002331648
+rainfall_total_mm,2,4125,0.3564554676974153
+rainfall_total_mm,3,4100,0.29046830353903
+wind_speed_mean_kmh,0,4175,-0.20217416312330627
+wind_speed_mean_kmh,1,4150,-0.22287871713609447
+wind_speed_mean_kmh,2,4125,-0.24874494460767813
+wind_speed_mean_kmh,3,4100,-0.24088741945092923
