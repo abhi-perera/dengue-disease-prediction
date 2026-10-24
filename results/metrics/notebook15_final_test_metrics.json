@@ -1,0 +1,24 @@
+{
+  "selected_model": "gwo_lstm",
+  "selected_model_path": "models\\notebook14_gwo_lstm_weather_only.keras",
+  "dataset": "weather_only",
+  "selection_source": "validation_2022_2023_only",
+  "test_period": "2024-01_to_2024-12",
+  "test_sample_count": 300,
+  "districts": 25,
+  "test_metrics": {
+    "n_samples": 300,
+    "MAE_cases": 69.52416372278867,
+    "RMSE_cases": 154.60478716047163,
+    "median_absolute_error_cases": 25.35355792477267,
+    "bias_pred_minus_actual_cases": -41.84009353160056,
+    "WAPE_percent": 41.691865467498474,
+    "R2": 0.6969538054640181
+  },
+  "test_used_for_model_selection": false,
+  "notes": [
+    "No retraining or scaler fitting performed in Notebook 15.",
+    "2024 test labels were loaded only after saving the validation-based selection.",
+    "Targets are proportional monthly allocations of weekly surveillance cases."
+  ]
+}

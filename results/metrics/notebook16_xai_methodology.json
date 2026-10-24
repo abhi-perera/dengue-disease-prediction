@@ -1,0 +1,19 @@
+{
+  "selected_model": "gwo_lstm",
+  "model_path": "models\\notebook14_gwo_lstm_weather_only.keras",
+  "analysis_period": "validation_2022_2023_only",
+  "test_data_used_for_xai": false,
+  "reference_validation_MAE_cases": 85.06485931617345,
+  "permutation_repeats": 2,
+  "permutation_unit": "whole_six_month_trajectory_within_same_target_calendar_month",
+  "permutation_seed": 42,
+  "integrated_gradients_steps": 64,
+  "integrated_gradients_reference": "mean_of_training_sequences",
+  "integrated_gradients_output_scale": "log1p_cases",
+  "cautions": [
+    "Model sensitivity is not causal effect.",
+    "Correlated predictors make feature rankings unstable.",
+    "Permuted inputs may be physically implausible.",
+    "XAI was not used to retune the frozen final model."
+  ]
+}
