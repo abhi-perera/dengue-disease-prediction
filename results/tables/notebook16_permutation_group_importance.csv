@@ -1,0 +1,4 @@
+feature_family,n_features,importance_delta_MAE_cases,mean_permuted_MAE_cases,repeats
+historical_dengue,7,75.80709742791203,160.87195674408548,2
+weather,24,13.381532634258008,98.44639195043146,2
+seasonality,2,0.0,85.06485931617345,2
