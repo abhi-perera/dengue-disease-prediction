@@ -1,0 +1,12 @@
+{
+  "dataset": "weather_only",
+  "period": "2022-01_to_2023-12",
+  "validation_only": true,
+  "metrics": {
+    "MAE_cases": 89.07862766408147,
+    "RMSE_cases": 177.53212504937076,
+    "n_samples": 600
+  },
+  "best_val_loss_log_mse": 0.5746489763259888,
+  "epochs_completed": 40
+}

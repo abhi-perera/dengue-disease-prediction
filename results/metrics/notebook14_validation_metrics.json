@@ -1,0 +1,8 @@
+{
+  "dataset": "weather_only",
+  "validation_only": true,
+  "metrics": {
+    "MAE_cases": 85.06485950463706,
+    "RMSE_cases": 178.23940883483797
+  }
+}
