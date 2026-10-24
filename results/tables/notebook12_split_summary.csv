@@ -1,0 +1,7 @@
+dataset,partition,rows,districts,first_target_date,last_target_date
+weather_only,train,3425,25,2010-08-01,2021-12-01
+weather_only,validation,600,25,2022-01-01,2023-12-01
+weather_only,test,300,25,2024-01-01,2024-12-01
+with_population,train,2375,25,2014-02-01,2021-12-01
+with_population,validation,600,25,2022-01-01,2023-12-01
+with_population,test,300,25,2024-01-01,2024-12-01
