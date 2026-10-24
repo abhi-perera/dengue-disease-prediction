@@ -1,0 +1,3 @@
+model,MAE_cases,RMSE_cases,n_samples,period
+Fixed LSTM baseline (Notebook 13),89.07862766408147,177.53212504937076,600.0,validation_2022_2023
+GWO-tuned LSTM (Notebook 14),85.06485950463706,178.23940883483797,,validation_2022_2023
