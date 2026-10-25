@@ -1,0 +1,77 @@
+{
+  "notebook": "20_rolling_origin_persistence_analysis",
+  "task": "one-month-ahead district-level dengue cases",
+  "status": "retrospective exploratory validation, not an untouched independent test",
+  "2024_accessed_for_training_or_evaluation": false,
+  "feature_source": "data\\final\\dengue_temporal_features_weather_only_2010_2024.csv",
+  "baseline_source": "data\\processed\\dengue_weather_monthly_2010_2024.csv",
+  "target": "target_dengue_cases_t_plus_1",
+  "sequence_months": 6,
+  "folds": [
+    {
+      "name": "2016-2017",
+      "train_target_end": "2015-12-01",
+      "validation_start": "2016-01-01",
+      "validation_end": "2017-12-01"
+    },
+    {
+      "name": "2018-2019",
+      "train_target_end": "2017-12-01",
+      "validation_start": "2018-01-01",
+      "validation_end": "2019-12-01"
+    },
+    {
+      "name": "2020-2021",
+      "train_target_end": "2019-12-01",
+      "validation_start": "2020-01-01",
+      "validation_end": "2021-12-01"
+    },
+    {
+      "name": "2022-2023",
+      "train_target_end": "2021-12-01",
+      "validation_start": "2022-01-01",
+      "validation_end": "2023-12-01"
+    }
+  ],
+  "internal_validation_months": 12,
+  "scaler": "StandardScaler fitted on inner-fitting sequences only, separately for each fold/model",
+  "target_transform": "log1p; inverse via max(0,expm1(pred))",
+  "architecture": "LSTM(32)-Dense(16,relu)-Dropout(0.2)-Dense(1)",
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "max_epochs": 40,
+  "patience": 6,
+  "batch_size": 32,
+  "learning_rate": 0.001,
+  "dropout": 0.2,
+  "feature_groups": {
+    "current_dengue_season": [
+      "dengue_cases",
+      "target_month_sin",
+      "target_month_cos"
+    ],
+    "compact_7": [
+      "dengue_cases",
+      "temperature_mean_c",
+      "humidity_mean_percent",
+      "rainfall_total_mm",
+      "wind_speed_mean_kmh",
+      "target_month_sin",
+      "target_month_cos"
+    ]
+  },
+  "regime_rule": "absolute change >=50 cases AND relative change >=25% of max(previous,1)",
+  "high_incidence_rule": "90th percentile of pre-fold training target cases",
+  "bootstrap": "resample 24 calendar-month blocks within fold; exploratory only",
+  "limitations": [
+    "2024 previously inspected; no new independent test claimed",
+    "Only three training seeds by default",
+    "Inner last-year validation excluded from gradient fitting",
+    "Weather measurements for month t assumed available at end of t",
+    "Month-block bootstrap ignores longer temporal dependence",
+    "Weekly cases were proportionally allocated to calendar months upstream"
+  ]
+}

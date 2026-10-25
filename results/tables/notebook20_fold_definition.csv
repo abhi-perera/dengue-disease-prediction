@@ -1,0 +1,5 @@
+fold,train_target_start,train_target_end,validation_start,validation_end
+2016-2017,first available through sequence construction,2015-12-01,2016-01-01,2017-12-01
+2018-2019,first available through sequence construction,2017-12-01,2018-01-01,2019-12-01
+2020-2021,first available through sequence construction,2019-12-01,2020-01-01,2021-12-01
+2022-2023,first available through sequence construction,2021-12-01,2022-01-01,2023-12-01

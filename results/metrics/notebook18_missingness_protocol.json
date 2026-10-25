@@ -1,0 +1,55 @@
+{
+  "model": "gwo_lstm",
+  "model_path": "models\\notebook14_gwo_lstm_weather_only.keras",
+  "validation_target_years": [
+    2022,
+    2023
+  ],
+  "test_2024_accessed": false,
+  "missingness": "entire district-month weather observation (all 4 variables)",
+  "mask_rates": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "imputers": [
+    "forward_fill",
+    "train_seasonal",
+    "train_knn"
+  ],
+  "training_only_donors": "through 2021-12",
+  "weather_features_recomputed": [
+    "temperature_mean_c",
+    "humidity_mean_percent",
+    "rainfall_total_mm",
+    "wind_speed_mean_kmh",
+    "temperature_mean_c_lag1",
+    "temperature_mean_c_lag2",
+    "temperature_mean_c_lag3",
+    "humidity_mean_percent_lag1",
+    "humidity_mean_percent_lag2",
+    "humidity_mean_percent_lag3",
+    "rainfall_total_mm_lag1",
+    "rainfall_total_mm_lag2",
+    "rainfall_total_mm_lag3",
+    "wind_speed_mean_kmh_lag1",
+    "wind_speed_mean_kmh_lag2",
+    "wind_speed_mean_kmh_lag3",
+    "temperature_mean_c_roll3_mean",
+    "humidity_mean_percent_roll3_mean",
+    "rainfall_total_mm_roll3_sum",
+    "wind_speed_mean_kmh_roll3_mean",
+    "temperature_mean_c_roll6_mean",
+    "humidity_mean_percent_roll6_mean",
+    "rainfall_total_mm_roll6_sum",
+    "wind_speed_mean_kmh_roll6_mean"
+  ],
+  "frozen_model": true,
+  "max_zero_mask_standardized_delta": 0.0,
+  "note": "Forward fill is causal; climatology and KNN are fitted on pre-2022 observations only. Validation results exploratory."
+}

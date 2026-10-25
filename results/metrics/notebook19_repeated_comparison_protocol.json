@@ -1,0 +1,31 @@
+{
+  "data_variant": "weather_only",
+  "train_target_end": "2021-12",
+  "validation_target_period": "2022-2023",
+  "test_2024_accessed": false,
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "fixed_hyperparameters": {
+    "lr": 0.001,
+    "dropout": 0.2,
+    "batch": 32
+  },
+  "gwo_selected_hyperparameters": {
+    "lr": 0.0017308560750108767,
+    "dropout": 0.31442572211078157,
+    "batch": 16
+  },
+  "gwo_search_repeated": false,
+  "epochs_max": 40,
+  "patience": 6,
+  "bootstrap_seed": 42,
+  "bootstrap_month_blocks": 24,
+  "bootstrap_interval_95": [
+    -0.030361424439442695,
+    8.311128069274227
+  ],
+  "validation_post_selection_warning": true
+}
